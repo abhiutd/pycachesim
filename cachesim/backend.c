@@ -947,7 +947,7 @@ static PyTypeObject CacheType = {
 
 static int Cache_init(Cache *self, PyObject *args, PyObject *kwds) {
     PyObject *store_to, *load_from, *victims_to, *tmp;
-    self->verbosity = 0;
+    self->verbosity = 3;
     static char *kwlist[] = {"name", "sets", "ways", "cl_size",
                              "replacement_policy_id", "write_back", "write_allocate",
                              "write_combining", "subblock_size",
